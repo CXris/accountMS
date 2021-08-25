@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#68755B"
+    tools:context=".Activities.HelpActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_registeractivity_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/iv_registeractivity_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_left_back"
+            android:clickable="true"
+            android:onClick="backtomain" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_registeractivity_register"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="帮助"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@+id/rl_registeractivity_top"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#d8ddd3"
+                android:text="（1）登录界面：注册过的用户需要凭自己的用户名和密码登入软件；\n
+（2）注册界面：第一次使用软件的用户需注册；\n
+（3）新增收入：添加新的收入记录，包括金额、时间、类型、付款方、备注；\n
+（4）新增支出：添加新的支出记录，包括金额、时间、类型、地点、备注；\n
+（5）我的收入：可以显示以前添加成功的所有收入数据，显示内容有类别、金额、时间，按照添加时间排序，最近添加的记录会显示在最上方。点击相应的一条收入记录可以看到详细内容并修改保存。长按一条收入记录可以删除，同时可也可通过底部的“删除全部”按钮删除全部数据。可以通过“添加”按钮添加新的收入记录；\n
+（6）我的支出：可以显示以前添加成功的所有支出数据，显示内容有类别、金额、时间，按照添加时间排序，最近添加的记录会显示在最上方。点击相应的一条支出记录可以看到详细内容并修改保存。长按一条支出记录可以删除，同时可也可通过底部的“删除全部”按钮删除全部数据。可以通过“添加”按钮添加新的支出记录；\n
+（7）数据管理：可以将收入/支出数据按照类别统计出金额，并用柱状图的方式表示出来。可以通过底部的按钮切换收入/支出数据来源；\n
+（8）收支便签：可以看到添加的所有收支便签，显示便签标题和添加时间。点击“添加”按钮可以添加新的便签，数据分为标题和内容；\n
+（9）帮助界面：对软件的简单介绍；\n
+（10）设置界面：可以更改用户的登录密码；\n
+（11）退出：点击退出按钮可以退出软件，下次打开需重新登录。\n
+" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
